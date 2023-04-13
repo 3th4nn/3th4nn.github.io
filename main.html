@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Guten Morgen</title>
+</head>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: Arial;
+        margin: 0;
+    }
+
+    .header {
+        padding: 30px;
+        text-align: center;
+        background: #913817;
+        color: white;
+        font-size: 30px;
+    }
+
+    .navbar{
+        overflow: hidden;
+        background-color: #333;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+    }
+    
+    .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+
+    .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    
+    .navbar a.active{
+        background-color: #666;
+        color: white;
+    }
+
+    .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .side {
+        -ms-flex: 30%;
+        flex: 30%;
+        background-color: #f1f1f1;
+        padding: 20px
+    }
+    
+    .main{
+        -ms-flex: 70%;
+        flex: 70%;
+        background-color: white;
+        padding: 20px;
+    }
+
+    .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+    }
+
+    @media screen and (max-width: 700px) {
+        .row {
+            flex-direction: column;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .navbar a {
+            float: none;
+            width: 100%;
+        }
+    }
+
+</style>
+
+<body>
+    <div class="header">
+        <h1>Guten Morgen</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="main.html" class="active">Heim</a>
+        <a href="menu.html">Speisekarte</a>
+        <a href="special.html">Speziell</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>Verkauf</h2>
+            <h5>Käse Bagel mit Ei</h5>
+            <img src="Number1Everything.jpg" style="height:200px">
+            <h3>Oder</h3>
+            <h5>Bagel mit Frischkäse</h5>
+            <img src="ScalionEverything.jpg" style="height:200px">
+            <h3>Und</h3>
+            <h5>Kaffee</h5>
+            <img src="Coffee.jpg" style="height:200px">
+            <hr>
+            <h3>Für € 6.49
+        </div>
+
+        <div class="main">
+            <h2>Guten Morgen</h2>
+            <h5>Es ist Heute</h5>
+            <img src="GutenMorgenKaffee.jpg" style="width:600px">
+            <h2>Iss mit wir</h2>
+            <img src="inside.jpg">
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <h2>Bis Morgen!</h2>
+    </div>
+
+</body>
+
+</html>
